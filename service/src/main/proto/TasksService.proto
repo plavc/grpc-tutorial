@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package net.plavcak.tutorial.grpc;
+
+message TaskInputRequest {
+    string author = 1;
+    string text = 2;
+}
+
+message TaskInputResponse {
+    bool status = 1;
+}
+
+service TasksService {
+    rpc hello(TaskInputRequest) returns (TaskInputResponse);
+}
