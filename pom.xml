@@ -16,7 +16,7 @@
     </modules>
 
     <properties>
-        <grpc.version>1.20.0</grpc.version>
+        <grpc.version>1.53.0</grpc.version>
         <java.version>11</java.version>
     </properties>
 
